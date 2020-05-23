@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 left" style="border: 1px solid">
+                <h2>LOGO AREA</h2>
+            </div>
+            <div class="col-md-10 right">
+                <h2 class="banner">BANNER AREA</h2>
+
+                <div class="navigation">
+                    <nav>
+                        <ul class="nav row">
+                            <li class="nav-item col-md-3">
+                                <a style="color: white" class="nav-link home" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item col-md-3">
+                                <a style="color: white" class="nav-link sign-in" href="#">Đăng ký</a>
+                            </li>
+                            <li class="nav-item col-md-3">
+                                <a style="color: white" class="nav-link tutorial" href="#">Hướng dẫn</a>
+                            </li>
+                            <li class="nav-item col-md-3">
+                                <a style="color: white" class="nav-link intro" href="#">Giới thiệu</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-3" style="padding: 0;">
+                <div style="border: 1px solid; background-color: #33CC33">
+                    <p>Du lịch Hạ Long</p>
+                </div>
+
+                <div style="border: 1px solid; background-color: #33CC33">
+                    <p>Du lịch Sapa</p>
+                </div>
+
+                <div style="border: 1px solid; background-color: #33CC33">
+                    <p>Du lịch Đà Lạt</p>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="headline">
+                    <h2 id="tour">Đăng ký tour du lịch</h2>
+                </div>
+                <form action="" class="needs-validation" method="post" novalidate>
+                    <!--Họ tên-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Họ tên (*)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="name" placeholder="" name="name" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Bạn chưa điền tên</div>
+                        </div>
+                    </div>
+                    <!--giới tính-->
+                    <div class="row">
+                        <label class="col-md-2">Giới tính (*)</label>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gt" value="1" required>
+                                <label class="form-check-label">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gt" value="0" required>
+                                <label class="form-check-label">Nữ</label>
+                                <div class="invalid-feedback" style="margin-left: 10px">Bạn chưa chọn giới tính</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--địa chỉ-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Địa chỉ (*)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="diachi" placeholder="" name="diachi" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Bạn chưa điền địa chỉ</div>
+                        </div>
+                    </div>
+
+                    <!--điện thoại-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Điện thoại (*)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="dienthoai" placeholder="" name="dienthoai" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback" style="margin-left: 10px">Bạn chưa điền số điện thoại</div>
+                        </div>
+                    </div>
+
+                    <!--email-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Email (*)</label>
+                        <div class="col-md-3">
+                            <input type="email" class="form-control" id="email" placeholder="" name="email" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Bạn chưa điền email</div>
+                        </div>
+                    </div>
+
+                    <!-- chọn tour-->
+                    <div class="row">
+                        <label class="col-md-2">Chọn tour</label>
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="1" required>
+                                <label class="form-check-label">Hạ Long</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="2" required>
+                                <label class="form-check-label">Sapa</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="3" required>
+                                <label class="form-check-label">Đà Lạt</label>
+                                <div class="invalid-feedback">Bạn hãy chọn ít nhất 1 tour</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Phương tiện-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Chọn phương tiện</label>
+                        <div class="col-md-3 row">
+                        <select class="form-control" required>
+                            <option value="" selected>Chọn phương tiện</option>
+                            <option value="1">Ô tô</option>
+                            <option value="2">Tàu hỏa</option>
+                            <option value="3">Máy bay</option>
+                        </select>
+                            <div class="invalid-feedback">Bạn hãy chọn 1 trong 3 phương tiện</div>
+                        </div>
+
+                    </div>
+                     <!--Thông tin khác-->
+                    <div class="form-group row">
+                        <label class="col-md-2">Thông tin khác</label>
+                        <textarea class="form-control col-md-4" rows="3" cols="10"></textarea>
+                    </div>
+
+                    <input type="submit" onClick="ValidateForm(this.form)" value="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

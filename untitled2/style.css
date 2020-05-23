@@ -1,0 +1,35 @@
+div .banner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+div .left{
+    padding-top: 40px;
+    padding-left: 0;
+}
+
+div .right {
+    padding: 0;
+}
+.navigation{
+    background-color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+<!-- menu -->
+div .col-md-3.travel{
+    background-color: #33CC33;
+    padding: 0;
+}
+
+.headline{
+    text-align: center;
+    color: #090;
+}
+.headline #tour {
+    font-size: 24px;
+    font-weight: bold;
+}
+
